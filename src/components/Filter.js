@@ -5,16 +5,13 @@ const Filter = ({id, className, label, options})=>{
         <div>
             <label htmlFor={id}>{label}</label>
             <select id={id}>
-
                 {
                     options.map( item =>(
                         <option value={item}>{item}</option>
-                    ))
-                }
+                ))}
             </select>
         </div>
     )
-
 };
 
 export default Filter;

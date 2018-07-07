@@ -6,18 +6,17 @@ let name = "filter1";
 const Header = ({gallery})=>{
     return(
         <div>
-        <div>Hello header!</div>
-        {gallery.map(( item, i) => (
+            <div>Hello header!</div>
+            {gallery.map(( item, i) => (
 
-            <Filter
-                key={i}
-                id={item.name}
-                className={""}
-                label={item.name}
-                options={item.value}
-            />
-        ))}
-
+                <Filter
+                    key={i}
+                    id={item.name}
+                    className={""}
+                    label={item.name}
+                    options={item.value}
+                />
+            ))}
         </div>
     )
 };
