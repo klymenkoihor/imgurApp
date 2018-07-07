@@ -2,7 +2,6 @@ import React from "react";
 
 import Filter from "./Filter";
 
-let name = "filter1";
 const Header = ({gallery})=>{
     return(
         <div>
