@@ -3,11 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 import Header from "./components/Header";
+import gallery from "./config.js"
 
 class App extends Component {
   render() {
     return (
-        <Header/>
+        <div>
+            <Header gallery={gallery}/>
+        </div>
     );
   }
 }

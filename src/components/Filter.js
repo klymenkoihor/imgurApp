@@ -1,10 +1,23 @@
 import React from "react";
 
-const Filter = (props)=>{
+const Filter = ({id, className, label, options})=>{
     return(
-        <div>Filter!</div>
+        <div>
+            <label htmlFor={id}>{label}</label>
+            <select id={id}>
+
+                {
+                    options.map( item =>(
+                        <option value={item}>{item}</option>
+                    ))
+                }
+            </select>
+        </div>
     )
 
 };
 
 export default Filter;
+
+
+
